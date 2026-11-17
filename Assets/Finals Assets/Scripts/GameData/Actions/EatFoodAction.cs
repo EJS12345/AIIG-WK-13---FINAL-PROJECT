@@ -4,7 +4,7 @@ public class EatFoodAction : GoapAction
 {
     private bool ate = false;
     private SupplyPileComponent targetSupply;
-    private float startTime = 0;
+    private float startTime = 0f;
     public float eatDuration = 1.5f;
 
     public EatFoodAction()
@@ -18,18 +18,11 @@ public class EatFoodAction : GoapAction
     {
         ate = false;
         targetSupply = null;
-        startTime = 0;
+        startTime = 0f;
     }
 
-    public override bool isDone()
-    {
-        return ate;
-    }
-
-    public override bool requiresInRange()
-    {
-        return true;
-    }
+    public override bool isDone() => ate;
+    public override bool requiresInRange() => true;
 
     public override bool checkProceduralPrecondition(GameObject agent)
     {
@@ -51,21 +44,19 @@ public class EatFoodAction : GoapAction
 
         targetSupply = closest;
         target = targetSupply.gameObject;
-
-        return targetSupply != null;
+        return true;
     }
 
     public override bool perform(GameObject agent)
     {
-        if (startTime == 0)
-            startTime = Time.time;
+        if (startTime == 0) startTime = Time.time;
 
         if (Time.time - startTime > eatDuration)
         {
             Labourer labourer = agent.GetComponent<Labourer>();
             if (labourer != null)
             {
-                labourer.hunger = 0f; // Reset hunger
+                labourer.hunger = 0f; // Reset hunger state
             }
             ate = true;
         }

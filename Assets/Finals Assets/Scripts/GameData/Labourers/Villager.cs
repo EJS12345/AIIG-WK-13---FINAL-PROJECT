@@ -4,25 +4,25 @@ using System.Collections.Generic;
 public class Villager : Labourer
 {
     /**
-     * DYNAMIC GOAL SELECTION:
-     * Goal 1: "collectLogs" -> Gather wood for the village (Work Goal)
-     * Goal 2: "isFed"       -> Eat food when hungry (Survival Goal)
+     * DUAL-GOAL GOAP SETUP (Requirement: 2 Goals Minimum)
+     * Goal 1 ("collectLogs" / "collectOre"): Fulfills village economic supply chain.
+     * Goal 2 ("isFed"): Triggers when hunger >= 50 to force the agent to eat.
      */
     public override HashSet<KeyValuePair<string, object>> createGoalState()
     {
-        HashSet<KeyValuePair<string, object>> goal = new HashSet<KeyValuePair<string, object>>();
+        HashSet<KeyValuePair<string, object>> goals = new HashSet<KeyValuePair<string, object>>();
 
-        // If hunger is high, prioritize survival
         if (hunger >= 50f)
         {
-            goal.Add(new KeyValuePair<string, object>("isFed", true));
+            // Goal 2: Survival
+            goals.Add(new KeyValuePair<string, object>("isFed", true));
         }
         else
         {
-            // Default goal: Work and collect logs
-            goal.Add(new KeyValuePair<string, object>("collectLogs", true));
+            // Goal 1: Labor/Work
+            goals.Add(new KeyValuePair<string, object>("collectLogs", true));
         }
 
-        return goal;
+        return goals;
     }
 }
