@@ -9,7 +9,7 @@ public abstract class Labourer : MonoBehaviour, IGoap
     [Header("Survival Mechanics (Goal 2)")]
     public float hunger = 0f;
     public float maxHunger = 100f;
-    public float hungerRate = 5f; // Increases over time
+    public float hungerRate = 5f; 
 
     protected virtual void Start()
     {
@@ -43,7 +43,7 @@ public abstract class Labourer : MonoBehaviour, IGoap
         worldData.Add(new KeyValuePair<string, object>("hasFirewood", (backpack.numFirewood > 0)));
         worldData.Add(new KeyValuePair<string, object>("hasTool", (backpack.tool != null)));
 
-        // World state flags for Hunger & Food
+        // World state flags for hunger and food
         worldData.Add(new KeyValuePair<string, object>("isHungry", (hunger >= 50f)));
         worldData.Add(new KeyValuePair<string, object>("isFed", (hunger < 20f)));
 
@@ -72,7 +72,6 @@ public abstract class Labourer : MonoBehaviour, IGoap
         Debug.LogWarning("<color=red>Plan Aborted:</color> " + GoapAgent.prettyPrint(aborter));
     }
 
-    // FIXED: Uses distance threshold instead of exact Vector3.Equals
     public bool moveAgent(GoapAction nextAction)
     {
         if (nextAction.target == null) return false;

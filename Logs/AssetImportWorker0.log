@@ -1,11 +1,11 @@
 [Licensing::Module] Trying to connect to existing licensing client channel...
 Built from '6000.3/staging' branch; Version is '6000.3.26f1 (de8167e7440c) revision 14582119'; Using compiler version '194234433'; Build Type 'Release'
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Earl Josh" at "2026-11-17T05:26:34.5606668Z"
 OS: 'Windows 11  (10.0.26200) CoreSingleLanguage' Language: 'en' Physical Memory: 16200 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Earl Josh" at "2026-11-18T07:28:19.9381627Z"
 System  architecture: x64
 Process architecture: x64
-Date: 2026-11-17T05:26:34Z
+Date: 2026-11-18T07:28:19Z
 
 COMMAND LINE ARGUMENTS:
 D:\Unity\Unity Hub\6000.3.26f1\Editor\Unity.exe
@@ -19,9 +19,9 @@ D:/Unity/AIIG WK 13 - FINAL PROJECT
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-60474
+50150
 -parentPid
-20680
+42520
 -analyticsCloudUserId
 18967928918023
 -analyticsLocalProjectId
@@ -80,12 +80,12 @@ D:/Unity/AIIG WK 13 - FINAL PROJECT
     "memorysetup-job-temp-allocator-block-size-background=1048576"
     "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
     "memorysetup-temp-allocator-size-cloud-worker=32768"
-Player connection [28532]  Target information:
+Player connection [49672]  Target information:
 
-Player connection [28532]  * "[IP] 192.168.254.104 [Port] 0 [Flags] 2 [Guid] 2237312349 [EditorId] 2237312349 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UCMDU7SH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [49672]  * "[IP] 192.168.254.104 [Port] 0 [Flags] 2 [Guid] 2076005859 [EditorId] 2076005859 [Version] 1048832 [Id] WindowsEditor(7,LAPTOP-UCMDU7SH) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [28532] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [28532] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [49672] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [49672] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 7
 Input System module state changed to: Initialized.
 [Physics::Module] Initialized fallback backend.
@@ -115,7 +115,7 @@ Initialize mono
 Mono path[0] = 'D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56908
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56520
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -126,19 +126,19 @@ Register platform support module: D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/Pla
 	ResponseStatus: Unsupported protocol version '1.18.3'.
 [Licensing::Module] Error: Failed to handshake to channel: "LicenseClient-Earl Josh"
 [Licensing::IpcConnector] LicenseClient-Earl Josh channel disconnected successfully.
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Earl Josh-6000.3.26" at "2026-11-17T05:26:39.4254964Z"
-[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 40028, path: "D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Earl Josh-6000.3.26" at "2026-11-18T07:28:25.7611463Z"
+[Licensing::Client] Code 10 while verifying Licensing Client signature (process Id: 44992, path: "D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/Resources/Licensing/Client/Unity.Licensing.Client.exe")
 [Licensing::Module] LicensingClient has failed validation; ignoring
 [Licensing::Client] Handshaking with LicensingClient:
   Version:                 1.18.3+d7ffd15
-  Session Id:              805f89bb98424aa98d2a0d6b5bcb7790
-  Correlation Id:          76d06b77fcf8955388a338d8f861382a
-  External correlation Id: 5166473212790396894
+  Session Id:              d1b1c102a3c74fce9d0175022185db1c
+  Correlation Id:          19cd0e086d2341e8096e28cc580f9780
+  External correlation Id: 8286719930135262147
   Machine Id:              Lp7C8pfoJa7EcGuQ2klvL8PqDUU=
-[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Earl Josh-6000.3.26" (connect: 0.00s, validation: 0.00s, handshake: 0.02s)
-[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Earl Josh-6000.3.26-notifications" at "2026-11-17T05:26:39.4537547Z"
-[Licensing::Module] Licensing Background thread has ended after 4.89s
-[Licensing::Module] Licensing is initialized (took 2.07s).
+[Licensing::Module] Successfully connected to LicensingClient on channel: "LicenseClient-Earl Josh-6000.3.26" (connect: 0.00s, validation: 0.01s, handshake: 0.03s)
+[Licensing::IpcConnector] Successfully connected to: "LicenseClient-Earl Josh-6000.3.26-notifications" at "2026-11-18T07:28:25.7945197Z"
+[Licensing::Module] Licensing Background thread has ended after 5.86s
+[Licensing::Module] Licensing is initialized (took 1.58s).
 [Licensing::Client] Successfully resolved entitlement details
 [Licensing::Module] License group:
   Id: 18967928918023-UnityPersXXXX
@@ -146,8 +146,8 @@ Register platform support module: D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/Pla
   Type: Assigned
   Expiration: Unlimited
 Register platform support module: D:/Unity/Unity Hub/6000.3.26f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
-Registered in 2.081965 seconds.
-- Loaded All Assemblies, in  3.151 seconds
+Registered in 1.599426 seconds.
+- Loaded All Assemblies, in  3.153 seconds
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
@@ -157,35 +157,35 @@ Package Manager log level set to [2]
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.912 seconds
-Domain Reload Profiling: 4063ms
-	BeginReloadAssembly (450ms)
+- Finished resetting the current domain, in  1.041 seconds
+Domain Reload Profiling: 4194ms
+	BeginReloadAssembly (811ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (2ms)
-	RebuildCommonClasses (76ms)
-	RebuildNativeTypeToScriptingClass (25ms)
-	initialDomainReloadingComplete (2179ms)
-	LoadAllAssembliesAndSetupDomain (421ms)
-		LoadAssemblies (451ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (148ms)
+	RebuildNativeTypeToScriptingClass (39ms)
+	initialDomainReloadingComplete (1705ms)
+	LoadAllAssembliesAndSetupDomain (449ms)
+		LoadAssemblies (811ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (410ms)
-			TypeCache.Refresh (406ms)
-				TypeCache.ScanAssembly (377ms)
+		AnalyzeDomain (440ms)
+			TypeCache.Refresh (437ms)
+				TypeCache.ScanAssembly (398ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (913ms)
+	FinalizeReload (1042ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (818ms)
+		SetupLoadedEditorAssemblies (951ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (115ms)
-			SetLoadedEditorAssemblies (7ms)
-			BeforeProcessingInitializeOnLoad (177ms)
-			ProcessInitializeOnLoadAttributes (318ms)
-			ProcessInitializeOnLoadMethodAttributes (201ms)
+			InitializePlatformSupportModulesInManaged (141ms)
+			SetLoadedEditorAssemblies (10ms)
+			BeforeProcessingInitializeOnLoad (204ms)
+			ProcessInitializeOnLoadAttributes (362ms)
+			ProcessInitializeOnLoadMethodAttributes (234ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -195,7 +195,7 @@ Domain Reload Profiling: 4063ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.656 seconds
+- Loaded All Assemblies, in  0.744 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Native extension for Android target not found
 Native extension for WindowsStandalone target not found
@@ -205,63 +205,59 @@ Native extension for WebGL target not found
 [Package Manager] Cannot connect to Unity Package Manager local server
 ScheduleIndexationOnStartup MainProcess:False IndexOnStartup:True
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.861 seconds
-Domain Reload Profiling: 1516ms
-	BeginReloadAssembly (442ms)
+- Finished resetting the current domain, in  0.867 seconds
+Domain Reload Profiling: 1611ms
+	BeginReloadAssembly (505ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (50ms)
-	RebuildCommonClasses (97ms)
-	RebuildNativeTypeToScriptingClass (31ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (43ms)
-		LoadAssemblies (321ms)
+		CreateAndSetChildDomain (68ms)
+	RebuildCommonClasses (103ms)
+	RebuildNativeTypeToScriptingClass (30ms)
+	initialDomainReloadingComplete (44ms)
+	LoadAllAssembliesAndSetupDomain (60ms)
+		LoadAssemblies (340ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (29ms)
-			TypeCache.Refresh (22ms)
-				TypeCache.ScanAssembly (13ms)
-			BuildScriptInfoCaches (2ms)
+		AnalyzeDomain (47ms)
+			TypeCache.Refresh (38ms)
+				TypeCache.ScanAssembly (22ms)
+			BuildScriptInfoCaches (3ms)
 			ResolveRequiredComponents (2ms)
-	FinalizeReload (862ms)
+	FinalizeReload (868ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (620ms)
+		SetupLoadedEditorAssemblies (628ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (19ms)
+			InitializePlatformSupportModulesInManaged (22ms)
 			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (215ms)
-			ProcessInitializeOnLoadAttributes (265ms)
-			ProcessInitializeOnLoadMethodAttributes (106ms)
-			AfterProcessingInitializeOnLoad (6ms)
+			BeforeProcessingInitializeOnLoad (226ms)
+			ProcessInitializeOnLoadAttributes (271ms)
+			ProcessInitializeOnLoadMethodAttributes (94ms)
+			AfterProcessingInitializeOnLoad (5ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
+		AwakeInstancesAfterBackupRestoration (15ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
 Refreshing native plugins compatible for Editor in 0.00 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 0 Unused Serialized files (Serialized files now loaded: 0)
 Curl error 3: URL rejected: Malformed input to a URL function
-Unloading 97 unused Assets / (29.8 KB). Loaded Objects now: 691.
-Memory consumption went from 73.7 MB to 73.7 MB.
-Total: 9.463000 ms (FindLiveObjects: 0.118500 ms CreateObjectMapping: 0.026600 ms MarkObjects: 9.140400 ms  DeleteObjects: 0.174100 ms)
+Unloading 97 unused Assets / (29.9 KB). Loaded Objects now: 693.
+Memory consumption went from 74.5 MB to 74.5 MB.
+Total: 13.836800 ms (FindLiveObjects: 0.134400 ms CreateObjectMapping: 0.026000 ms MarkObjects: 13.486300 ms  DeleteObjects: 0.188400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 137700.713264 seconds.
-  path: Assets/Finals Assets/Scripts/General Scripts/PopulationSpawner.cs
-  artifactKey: Guid(28eac4b9eacd18247a158dc6c392fcbc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Finals Assets/Scripts/General Scripts/PopulationSpawner.cs using Guid(28eac4b9eacd18247a158dc6c392fcbc) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: 'dc80fc791bdc4a4a659d26987caf33ed') in 0.242836 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
+  Time since last request: 231426.068277 seconds.
+  path: Assets/Resources/SupplyPile.prefab
+  artifactKey: Guid(89d4a2347bc39ff4aafa9398ae9049a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
+Start importing Assets/Resources/SupplyPile.prefab using Guid(89d4a2347bc39ff4aafa9398ae9049a2) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '58f119404f2dbcf3bf35df8452d675d5') in 0.3453584 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 10
 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000039 seconds.
-  path: Assets/Finals Assets/Scripts/GameData/Actions/EatFoodAction.cs
-  artifactKey: Guid(3358e13af78cdc049bcf55815cc6816d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d)
-Start importing Assets/Finals Assets/Scripts/GameData/Actions/EatFoodAction.cs using Guid(3358e13af78cdc049bcf55815cc6816d) Importer(2089858483,b0f066a214c2f5e87bad3c948f4d605d) (ScriptedImporter) -> (artifact id: '1908d0e8ab77665ac3f11073fdef2b6e') in 0.0291676 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-Curl error 6: Could not resolve host: cdp.cloud.unity3d.com
 Curl error 6: Could not resolve host: config.uca.cloud.unity3d.com
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

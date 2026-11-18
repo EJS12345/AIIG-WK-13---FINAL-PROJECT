@@ -3,8 +3,8 @@ using UnityEngine;
 public class PopulationSpawner : MonoBehaviour
 {
     [Header("100-Entity Simulation Setup")]
-    public GameObject[] villagerPrefabs; // Assign Logger, WoodCutter, Miner, Blacksmith prefabs
-    public int totalEntities = 100;      // Requirement: 100 minimum
+    public GameObject[] villagerPrefabs; 
+    public int totalEntities = 100;      
     public Vector2 spawnArea = new Vector2(60f, 60f);
 
     void Start()

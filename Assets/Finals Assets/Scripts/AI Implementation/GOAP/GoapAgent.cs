@@ -15,7 +15,7 @@ public sealed class GoapAgent : MonoBehaviour {
 	private HashSet<GoapAction> availableActions;
 	private Queue<GoapAction> currentActions;
 
-	private IGoap dataProvider; // this is the implementing class that provides our world data and listens to feedback on planning
+	private IGoap dataProvider; 
 
 	private GoapPlanner planner;
 
@@ -63,14 +63,14 @@ public sealed class GoapAgent : MonoBehaviour {
 		idleState = (fsm, gameObj) => {
 			// GOAP planning
 
-			// get the world state and the goal we want to plan for
+			
 			HashSet<KeyValuePair<string,object>> worldState = dataProvider.getWorldState();
 			HashSet<KeyValuePair<string,object>> goal = dataProvider.createGoalState();
 
 			// Plan
 			Queue<GoapAction> plan = planner.plan(gameObject, availableActions, worldState, goal);
 			if (plan != null) {
-				// we have a plan, hooray!
+				
 				currentActions = plan;
 				dataProvider.planFound(goal, plan);
 
@@ -78,7 +78,7 @@ public sealed class GoapAgent : MonoBehaviour {
 				fsm.pushState(performActionState);
 
 			} else {
-				// ugh, we couldn't get a plan
+				
 				Debug.Log("<color=orange>Failed Plan:</color>"+prettyPrint(goal));
 				dataProvider.planFailed(goal);
 				fsm.popState (); // move back to IdleAction state
@@ -156,7 +156,7 @@ public sealed class GoapAgent : MonoBehaviour {
 					bool success = action.perform(gameObj);
 
 					if (!success) {
-						// action failed, we need to plan again
+						
 						fsm.popState();
 						fsm.pushState(idleState);
 						dataProvider.planAborted(action);

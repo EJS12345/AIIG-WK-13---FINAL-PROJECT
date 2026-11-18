@@ -94,15 +94,15 @@ public class GoapPlanner
 
 				// apply the action's effects to the parent state
 				HashSet<KeyValuePair<string,object>> currentState = populateState (parent.state, action.Effects);
-				//Debug.Log(GoapAgent.prettyPrint(currentState));
+		
 				Node node = new Node(parent, parent.runningCost+action.cost, currentState, action);
 
 				if (inState(goal, currentState)) {
-					// we found a solution!
+		
 					leaves.Add(node);
 					foundOne = true;
 				} else {
-					// not at a solution yet, so test all the remaining actions and branch out the tree
+					
 					HashSet<GoapAction> subset = actionSubset(usableActions, action);
 					bool found = buildGraph(node, leaves, subset, goal);
 					if (found)
@@ -151,13 +151,13 @@ public class GoapPlanner
 	 */
 	private HashSet<KeyValuePair<string,object>> populateState(HashSet<KeyValuePair<string,object>> currentState, HashSet<KeyValuePair<string,object>> stateChange) {
 		HashSet<KeyValuePair<string,object>> state = new HashSet<KeyValuePair<string,object>> ();
-		// copy the KVPs over as new objects
+	
 		foreach (KeyValuePair<string,object> s in currentState) {
 			state.Add(new KeyValuePair<string, object>(s.Key,s.Value));
 		}
 
 		foreach (KeyValuePair<string,object> change in stateChange) {
-			// if the key exists in the current state, update the Value
+		
 			bool exists = false;
 
 			foreach (KeyValuePair<string,object> s in state) {
